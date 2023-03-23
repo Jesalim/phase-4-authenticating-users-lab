@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-
-     def create 
+    def create 
 
         user = User.find_by(username: params[:username])
 
@@ -16,5 +15,4 @@ class SessionsController < ApplicationController
         head :no_content
 
     end
-
 end
